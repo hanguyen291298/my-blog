@@ -20,17 +20,17 @@ const text = document.querySelector(".dynamic-text")
 const textload = function(){
     setTimeout(()=>{
         text.textContent = " self-taught."
-    }, 4005)
+    }, 4002)
     setTimeout(()=>{
         text.textContent = "n inspier."
-    }, 8010)
+    }, 8004)
     setTimeout(()=>{
         text.textContent = " developer."
-    }, 12015);
+    }, 12006);
     setTimeout(()=>{
         text.textContent = " book lover."
-    }, 16020)
+    }, 16006)
 }
 
 textload()
-setInterval(textload, 16020)
+setInterval(textload, 16006)
