@@ -3,23 +3,29 @@
     padding: 0;
     color: white;
     box-sizing: border-box;
+    /* border: 1px solid white; */
 }
 
-body{
-    background-image: url("Images/background.jpg");
+html { 
+    background: url(Images/nightsky.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-}
+    
+  }
 /*--------------------------------------------HEADER----------------------------------------------------*/
 .head-container{
-    display: flex;
-       
+    display: flex;       
     flex-wrap: wrap;
 }
 
 .header-text{
-    width: 60%;
-    margin: 200px auto;
-    font-size: 80px;
+    width: 65%;
+    margin: 6rem auto;
+    padding: 2rem;
+    font-size: 5rem;
+    
     display: flex;
     flex-direction: column;
 }
@@ -27,7 +33,7 @@ body{
 
 #header-left, #header-right{
     text-shadow: 5px 5px 5px #cae0eb;
-    
+    padding: 1rem;
     
 }
 
@@ -56,71 +62,66 @@ body{
 
 .navigation{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
+    width: 20vw;
+    padding: 3rem;
     
-    width: 20%;
-
-}
-#logo{
-    align-self: flex-end;
 }
 
-.logo{
-    margin: 40px 0;
-    width: 160px;
-    height: auto;
-}
-
-.touch{
-    width: 80px;
-    height: auto;
-}
-
-.touch-button{
+.touch-button{   
     cursor: pointer;
-    padding: 10px;
-    margin-top: 140px;
-    margin-bottom: 10px;
-    background-color: #1E1E1E;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
+    padding: 1rem ;
+    margin-top: 10rem;
+    background-color: transparent;
+    border: 1px ridge gainsboro;
+    border-radius: 50%;
    
+}
+.touch-button svg{
+    width: 100%;
 }
 
 .touch-button:hover{
-    background-color: gray;
+  
+    transform: scale(1.2);
 }
 
 /*--------------------------------------------DROPDOWN----------------------------------------------------*/
 .dropdown {
-    background-color: #1E1E1E;
+    background-color: transparent;
+    
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0px;   
-    right: 160px;
+    /* right: 160px; */
     visibility:hidden;
+    padding: 150px 250px;
 }
 
 .dropdown-content{
-    margin-top: 200px;
-    margin-left: 300px;
+    box-shadow: none, none, 2px 2px grey;
+    /* margin-top: 200px;
+    margin-left: 300px; */
 }
 
 .dropdown-content li{
     list-style-type: none;
-    margin-bottom: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.dropdown-content a{
+.dropdown-content li a{
     text-decoration: none;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
+}
+.dropdown-content li a:hover{
+    font-size: 4rem;
 }
 
 .close-button{
     position: absolute;
-    top: 200px;
-    right: 150px;
+    right: 250px;
+    cursor: pointer;
 }
