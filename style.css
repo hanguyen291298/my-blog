@@ -7,7 +7,7 @@
 }
 
 html { 
-    background: url(Images/nightsky.jpg) no-repeat center center fixed; 
+    background: url(Images/flower.jpg) no-repeat top center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -22,30 +22,54 @@ html {
 
 .header-text{
     width: 65%;
-    margin: 6rem auto;
+    height: 65vh;
+    margin-top: 6rem;
+    margin-left: 10rem;
     padding: 2rem;
-    font-size: 5rem;
-    
+    font-size: 8rem;
+    font-weight: 700;
     display: flex;
     flex-direction: column;
 }
 
 
 #header-left, #header-right{
-    text-shadow: 5px 5px 5px #cae0eb;
+    text-shadow: 3px 3px 5px #cae0eb;
     padding: 1rem;
-    
+    width: 100%;
+    height: 50%;
 }
 
 #header-left{
-    animation: slideleft 2s;
-    align-self: flex-start;
+    animation: slideright 2s;
+    text-align: left;
 }
 
 #header-right{
-    animation: slideright 3s;
-    align-self: flex-end;
+    animation: slideleft 3s;   
+    padding-left: 10rem;
+    overflow: hidden;
 }
+#header-right span{
+    margin-right: 0;
+}
+.dynamic-text{
+    position: relative;
+}
+.dynamic-text:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 105%;
+    border-left: 2px solid red;
+    background-color: #1E1E1E;
+    animation: typing 4s steps(11) infinite;
+    
+    /* animation-delay: 3s; */
+}
+
 
 @keyframes slideleft{
     from{
@@ -55,6 +79,14 @@ html {
 @keyframes slideright{
     from{
         transform: translatex(-300%)
+    }
+}
+@keyframes typing{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
     }
 }
 
@@ -117,7 +149,8 @@ html {
     font-weight: bold;
 }
 .dropdown-content li a:hover{
-    font-size: 4rem;
+    font-size: 3.2rem;
+    color: #FFC9C0;
 }
 
 .close-button{
