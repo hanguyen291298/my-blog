@@ -2,6 +2,7 @@
 const DROPDOWN = document.querySelector(".dropdown")
 const CLOSE_BUTTON = document.querySelector(".close-button")
 const TOUCH_BUTTON = document.querySelector(".touch-button")
+const PHONE_TOUCH_BUTTON = document.querySelector(".phone-menu")
 const HEAD_CONTAINER = document.querySelector(".head-container")
 
 CLOSE_BUTTON.addEventListener("click", () => {
@@ -10,6 +11,10 @@ CLOSE_BUTTON.addEventListener("click", () => {
 })
 
 TOUCH_BUTTON.addEventListener("click", () => {
+    DROPDOWN.setAttribute("style", "visibility: visible");
+    HEAD_CONTAINER.setAttribute("style", "visibility: hidden")
+})
+PHONE_TOUCH_BUTTON.addEventListener("click", () => {
     DROPDOWN.setAttribute("style", "visibility: visible");
     HEAD_CONTAINER.setAttribute("style", "visibility: hidden")
 })
