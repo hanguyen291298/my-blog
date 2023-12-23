@@ -14,10 +14,15 @@ html {
     background-size: cover;
     
   }
+body{
+    margin: 0;
+    padding: 0;
+}
 /*--------------------------------------------HEADER----------------------------------------------------*/
 .head-container{
     display: flex;       
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .header-text{
@@ -26,7 +31,7 @@ html {
     margin-top: 6rem;
     margin-left: 10rem;
     padding: 2rem;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -48,13 +53,14 @@ html {
 #header-right{
     animation: slideleft 3s;   
     padding-left: 10rem;
-    overflow: hidden;
+    
 }
 #header-right span{
     margin-right: 0;
 }
 .dynamic-text{
     position: relative;
+    overflow: hidden;
 }
 .dynamic-text:before{
     content: "";
@@ -62,10 +68,10 @@ html {
     left: 0;
     top: 0;
     width: 100%;
-    height: 105%;
+    height: 115%;
     border-left: 2px solid red;
     background-color: #1E1E1E;
-    animation: typing 4s steps(11) infinite;
+    animation: typing 4s steps(13) infinite;
     
     /* animation-delay: 3s; */
 }
@@ -94,16 +100,18 @@ html {
 
 .navigation{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     width: 20vw;
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     
 }
 
 .touch-button{   
+    width: 100%;
     cursor: pointer;
     padding: 1rem ;
-    margin-top: 10rem;
+    margin-top: 6rem;
     background-color: transparent;
     border: 1px ridge gainsboro;
     border-radius: 50%;
@@ -117,24 +125,36 @@ html {
   
     transform: scale(1.2);
 }
+/* bar-menu for smaller screen */
+
+.phone-menu{
+    width: 20%;
+    align-self: flex-end;
+    visibility: hidden;
+}
+.phone-menu:hover{
+    transform: scale(1.3);
+    fill: aqua;
+}
+
+
 
 /*--------------------------------------------DROPDOWN----------------------------------------------------*/
 .dropdown {
-    background-color: transparent;
-    
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0px;   
     /* right: 160px; */
     visibility:hidden;
-    padding: 150px 250px;
+    padding: 10rem 20rem;
 }
 
 .dropdown-content{
-    box-shadow: none, none, 2px 2px grey;
-    /* margin-top: 200px;
-    margin-left: 300px; */
+    padding: 3rem;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    border-radius: 2rem;
 }
 
 .dropdown-content li{
@@ -155,6 +175,184 @@ html {
 
 .close-button{
     position: absolute;
-    right: 250px;
+    right: 22rem;
+    top: 12rem;
     cursor: pointer;
+}
+
+/* media querry for smaller screen */
+
+@media only screen and (max-width: 1400px) {
+    .header-text{
+        font-size: 5rem;
+    }
+    .dropdown{
+        padding: 6rem 12rem;
+       
+    }
+    .close-button{
+        top: 10rem;
+        right: 14rem;
+    }
+    .dropdown-content li a{
+        font-size: 2.5rem;
+    }
+    .dropdown-content li a:hover{
+        font-size: 2.7rem;
+    }
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .header-text{
+        font-size: 3.5rem;
+        width: 60%;
+        height: 40vh;
+    }
+    .dropdown{
+        padding: 5rem 10rem;
+       
+    }
+    .close-button{
+        top: 8rem;
+        right: 12rem;
+    }
+    .dropdown-content li a{
+        font-size: 2rem;
+    }
+    .dropdown-content li a:hover{
+        font-size: 2.2rem;
+    }
+    #header-right{
+        padding-left: 5rem;
+        
+    }
+    .navigation{
+        width: 15vw;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+    .touch-button svg{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .header-text{
+        font-size: 2.5rem;
+        height: 30vh;
+    }
+
+    #header-right{
+        padding-left: 3rem;       
+    }
+    .navigation{
+        padding-left: 0;
+        padding-right: 0;       
+    }
+    .touch-button svg{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .header-text{
+        width: 80%;
+        font-size: 2.5rem;
+        height: 30vh;
+        margin-left: 3rem;
+        margin-top: 2.5rem;
+        padding: 5px;
+    }
+    .close-button{
+        top: 4rem;
+        right: 10rem;
+    }
+    .dropdown{
+        padding: 3rem 8rem;
+       
+    }
+    .dropdown-content li a{
+        font-size: 1.5rem;
+    }
+    .dropdown-content li a:hover{
+        font-size: 1.8rem;
+    }
+    #header-right{
+        padding-left: 3rem;       
+    }
+    .navigation{
+        width: 5vw; 
+    }
+    .phone-menu{
+        width: 100%;
+    }
+    .phone-menu{
+        visibility: visible;
+    }
+    .touch-button{
+        display: none;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .header-text{
+        width: 100%;
+        font-size: 1.8rem;
+        height: 20vh;
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+
+    #header-right{
+        padding-left: 2rem;       
+    }
+    .dropdown{
+        padding: 1rem 8rem;
+       
+    }
+    .header-text{
+        visibility: visible;
+        margin-left: 4rem;
+    }
+   .dropdown-content li a{
+    font-size: 1rem;
+}
+    .dropdown-content li a:hover{
+    font-size: 1.2rem;
+}
+.close-button{
+    display: none
+}
+.phone-menu{
+    visibility: hidden;
+}
+.dropdown-content{
+    display: flex;
+    justify-content: center;
+    visibility: visible;
+    gap: 1rem;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: unset;
+    border-radius: unset;    
+}
+}
+
+@media only screen and (max-width: 390px){
+    .dropdown-content li a{
+        font-size: 12px
+    }
+    .dropdown-content li a:hover{
+        color: #F3CDDF;
+    }
+    .dropdown-content{
+        gap: 10px;
+        
+    }
 }
