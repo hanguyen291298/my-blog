@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Flex', sans-serif;
-    /* border: 2px solid red; */
+    /* border: 1px ridge red; */
 }
 body{ 
     background: url(../Images/nightsky.jpg) no-repeat center center fixed; 
@@ -13,7 +13,6 @@ body{
     -o-background-size: cover;
     background-size: cover;
   
-    
 }
 /* ----------------------HEADER----------------------------- */
 header{
@@ -22,7 +21,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding: 40px 100px;
+    padding: 30px 100px;
     transition: 0.6s;
     z-index: 10000;
 }
@@ -60,17 +59,26 @@ header ul li a:hover{
     color: aqua;
 }
 /* ----------------------IMAGE-CONTAINER----------------------------- */
-.quote-container{
+.main{
     position: relative;
-    top: 150px;
+    top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
+}
+.sologan{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
 }
 
 .sologan p {
-    font-size: 6em;
+    font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 8px;
 }
@@ -79,7 +87,7 @@ header ul li a:hover{
 }
 
 .sologan .first{
-    padding-left: 1.1em;
+    padding-left: 2.2em;
     animation: toleft 3s;
 }
 
@@ -98,10 +106,22 @@ header ul li a:hover{
       transform: translateX(300%) ;
     } 
   }
-  
-
-
-
+ 
+/* .quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} */
+p.quote, p.author{
+    font-style: italic;
+}
+p.quote{
+    font-size: 2rem;
+    padding: 10px 2rem;
+}
+p.author{
+    text-align: end;
+}
 
 /* ----------------------IMAGE-CONTAINER----------------------------- */
 
@@ -110,7 +130,7 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 400px ;
+    /* top: 200px ; */
     transform-style: preserve-3d ;
     transition: 0.5s;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0002)
