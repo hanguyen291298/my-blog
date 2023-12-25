@@ -66,14 +66,13 @@ header ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 }
 .sologan{
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -89,10 +88,12 @@ header ul li a:hover{
 .sologan .first{
     padding-left: 2.2em;
     animation: toleft 3s;
+    transition: 0.5s;
 }
 
 .sologan .second{
     animation: toright 3s;
+    transition: 0.5s;
 }
 
 @keyframes toleft{
@@ -107,11 +108,9 @@ header ul li a:hover{
     } 
   }
  
-/* .quotes{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-} */
+.quotes{
+    margin: 0 2rem;
+}
 p.quote, p.author{
     font-style: italic;
 }
@@ -129,8 +128,7 @@ p.author{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    /* top: 200px ; */
+    /* position: relative; */
     transform-style: preserve-3d ;
     transition: 0.5s;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0002)
@@ -160,4 +158,38 @@ p.author{
 .img-container .box:hover{
     transform: perspective(500px) rotateY(0) scale(1.5);
     z-index: 1000;
+}
+
+/*--------------------- newest-blog----------------------- */
+.new-article{
+    margin: 1rem 5rem;
+    
+    
+    /* align-self: flex-start; */
+}
+.articles{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid-template-rows: repeat(2, 300px);
+}
+.articles .article-box{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 2rem;
+
+}
+.articles .article-box img{
+ 
+    width: 30%;
+    /* min-width: 100px; */
+    height: auto;
+    
+}
+.articles .article-box p{
+  
+    width: 60%;
+    letter-spacing: 2px;
+    overflow: hidden;
 }
