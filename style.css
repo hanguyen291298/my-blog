@@ -46,20 +46,21 @@ body{
 }
 
 #header-left{
-    animation: slideright 2s;
+    
     text-align: left;
 }
 
 #header-right{
-    animation: slideleft 3s;   
+     
     padding-left: 10rem;
+    overflow: hidden;
     
 }
 #header-right span{
     margin-right: 0;
+    position: relative;
 }
 .dynamic-text{
-    position: relative;
     overflow: hidden;
 }
 .dynamic-text:before{
@@ -73,23 +74,13 @@ body{
     background-color: #1E1E1E;
     animation: typing 4s steps(13) infinite;
     
-    /* animation-delay: 3s; */
+    /* animation-delay: 3s;*/
 }
 
 
-@keyframes slideleft{
-    from{
-        transform: translatex(300%)
-    }
-}
-@keyframes slideright{
-    from{
-        transform: translatex(-300%)
-    }
-}
 @keyframes typing{
     40%, 60%{
-        left: 100%;
+        left: calc(100%);
     }
     100%{
         left: 0;
@@ -121,8 +112,7 @@ body{
     width: 100%;
 }
 
-.touch-button:hover{
-  
+.touch-button:hover{ 
     transform: scale(1.2);
 }
 /* bar-menu for smaller screen */
@@ -232,6 +222,9 @@ body{
         padding-left: 1rem;
         padding-right: 1rem;
         
+    }
+    .touch-button{
+        margin-top: 3rem;
     }
     .touch-button svg{
         width: 90%;
