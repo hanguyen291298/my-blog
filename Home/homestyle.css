@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
     /* border: 2px solid red; */
 }
 body{ 
@@ -43,19 +44,64 @@ header ul li {
     position: relative;
     list-style: none;
     margin: 0 15px;
-    font-size: 1.3em;
-    letter-spacing: 1px;
-    transition: 0.6s;
+    font-size: 1.2em;
 }
 header.sticky li {
     color: #000;
 }
 header ul li a{
     text-decoration: none;
-    font-size: 2em;
-    letter-spacing: 2px;
+    font-size: 1.3em;
+    letter-spacing: 1px;
     transition: 0.6s;
 }
+header ul li a:hover{
+    font-size: 1.4em;
+    color: aqua;
+}
+/* ----------------------IMAGE-CONTAINER----------------------------- */
+.quote-container{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sologan p {
+    font-size: 6em;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.sologan p span{
+    font-weight: bolder;   
+}
+
+.sologan .first{
+    padding-left: 1.1em;
+    animation: toleft 3s;
+}
+
+.sologan .second{
+    animation: toright 3s;
+}
+
+@keyframes toleft{
+  from{
+    transform: translateX(-300%) ;
+  } 
+}
+
+@keyframes toright{
+    from{
+      transform: translateX(300%) ;
+    } 
+  }
+  
+
+
+
 
 /* ----------------------IMAGE-CONTAINER----------------------------- */
 
@@ -64,15 +110,15 @@ header ul li a{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 300px ;
+    top: 400px ;
     transform-style: preserve-3d ;
     transition: 0.5s;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0002)
 
 }
 .img-container .box{
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     position: relative;
 }
 .img-container .box img{
@@ -87,7 +133,8 @@ header ul li a{
     margin: 0 -20px;
     filter: drop-shadow(0 0 25px #000) drop-shadow(0 0 45px #000);
     transform: perspective(500px) rotateY(45deg) scale(0.95);
-}.img-container .box:hover ~ .box{
+}
+.img-container .box:hover ~ .box{
     transform: perspective(500px) rotateY(-45deg) scale(0.95);
 }
 .img-container .box:hover{
