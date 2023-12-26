@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Flex', sans-serif;
-    /* border: 1px ridge red; */
+    border: 1px ridge red;
 }
 body{ 
     background: url(../Images/nightsky.jpg) no-repeat center center fixed; 
@@ -162,10 +162,12 @@ p.author{
 
 /*--------------------- newest-blog----------------------- */
 .new-article{
-    margin: 1rem 5rem;
-    
-    
-    /* align-self: flex-start; */
+    padding: 2rem;
+   
+}
+h3{
+    font-size: 3rem;
+    padding: 1rem;
 }
 .articles{
     display: grid;
@@ -192,4 +194,40 @@ p.author{
     width: 60%;
     letter-spacing: 2px;
     overflow: hidden;
+}
+.visit-blog{
+    background-color: transparent;
+    font-size: 1rem;
+    font-style: italic;
+    border: none;
+    text-align: end;
+    width: 100%;
+}
+.visit-blog:hover{
+    color: aqua;
+    font-size: 1.2rem;
+}
+
+/* ------------------------------------PROJECTS------------------------- */
+.projects{
+    align-self: flex-start;
+    width: 100%;
+    padding: 2rem;
+    
+}
+
+.gallery-imgs{
+    width: 60%;
+    margin: 3rem auto;
+    display: grid;
+    justify-content: center;
+    /* justify-items: center; */
+    /* align-items: center; */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-imgs a img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
