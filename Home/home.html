@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="homestyle.css">
@@ -118,13 +119,23 @@
         </div>
         <div id="contact">
             <h3>Let's talk</h3>
-            <div class="contact-info">
+            <div class="contact-container">
                 <p>Let's talk to improve ourselves.</p>
-                <form action="" method="post">
-                    <label for="name">Your Name</label><input type="text" name="Name" id="name">
-                    <label for="name">Your Email</label><input type="email" name="Email" id="email">
-                    <label for="name">Message</label><textarea name="Message" id="message" cols="30" rows="10"></textarea><br>
-                </form>
+                <div class="contact-info">
+                    <div class="icon-contact">
+                        <a href=""><i class="fa fa-facebook-square"></i></a>
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square"></i></a>
+                        
+                    </div>
+                    
+                    <form action="" method="post">
+                        <label for="name">Your Name</label><input type="text" name="Name" id="name">
+                        <label for="name">Your Email</label><input type="email" name="Email" id="email">
+                        <label for="name">Message</label><textarea name="Message" id="message" cols="30" rows="10"></textarea><br>
+                    </form>
+                </div>
+                
             </div>
            
         </div>
