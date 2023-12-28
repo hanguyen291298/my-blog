@@ -9,7 +9,7 @@
 :root{
     --header-font-size: clamp(0.5rem, 1vw + 0.5rem, 1.5rem);
     /* --header-font-size-hover: clamp(0.6rem, 1vw + 0.6rem, 1.7rem); */
-    --sologan-font-size: clamp(3rem, 5vw, 10rem);
+    --sologan-font-size: clamp(3rem, 5 vw, 10rem);
 }
 body{ 
     background: url(../Images/nightsky.jpg) no-repeat center center fixed; 
@@ -217,12 +217,10 @@ h3{
 }
 
 /* ------------------------------------PROJECTS------------------------- */
-.projects{
-    align-self: flex-start;
-    width: 100%;
-    
-    padding: 2rem;
-    
+.projects, #contact{
+    /* align-self: flex-start; */
+    width: 100%;    
+    padding: 2rem;    
 }
 
 .gallery-imgs{
@@ -230,7 +228,7 @@ h3{
     
     margin: 3rem auto;
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 2rem 4rem;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -242,4 +240,21 @@ h3{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* ------------------------------CONTACT FORM------------------- */
+
+.contact-info{
+    display: flex;
+    padding: 2rem;
+}
+#contact form{
+    margin: 2rem auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(50px, 10vw) minmax(120px,30vw);
+   
+}
+#contact form label{
+    font-size: 1rem;
 }
