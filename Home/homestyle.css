@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Flex', sans-serif;
-    border: 1px ridge red;
+    /* border: 1px ridge red; */
 }
 :root{
     --header-font-size: clamp(0.5rem, 1vw + 0.5rem, 1.5rem);
@@ -23,7 +23,7 @@ body{
 header{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     padding: 30px 100px;
@@ -251,8 +251,8 @@ h3{
 #contact form{
     margin: 2rem auto;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: minmax(50px, 10vw) minmax(120px,30vw);
+    row-gap: 1rem;
+    grid-template-columns: minmax(40px, 10vw) minmax(120px,30vw);
    
 }
 #contact form label{
@@ -260,4 +260,12 @@ h3{
 }
 .icon-contact{
     font-size: 2rem;
+}
+
+
+/* ----------------------------FOOTER-------------------------- */
+.footer{
+ width: 100%;
+ padding-bottom: auto;
+ text-align: center;
 }
