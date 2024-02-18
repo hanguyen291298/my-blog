@@ -3,6 +3,8 @@ body {
     --background-color: white;
     --theme-background: orangered;
     --button-text-color: red;
+    --transition-dalay: 1s;
+    --rotaion: 0;
 
     background-color: var(--background-color);
     height: 100vh;
@@ -17,7 +19,8 @@ body.dark{
     --background-color: rgb(53, 57, 66);
     --theme-background: yellow;
     --button-text-color: var(--background-color);
-
+    --transition-dalay: 1s;
+    --rotation: 180deg;
     background-color: var(--background-color);
     
 }
@@ -29,8 +32,9 @@ svg {
 }
 
 .toggle-button{
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.5rem; 
     color: var(--button-text-color);
+    transition: var(--transition-dalay)
 }
 .toggle-button:hover,
 .toggle-button:focus{
@@ -38,9 +42,26 @@ svg {
 }
 
 .themes-container{
+
     position: absolute;
     top: 0;
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
     height: 200vmin;
     pointer-events: none;
+    transform: rotate(var(--rotation));
+    
+}
+.sun, .moon{
+    position: absolute;
+    /* transition-delay: var(--transition-dalay); */
+}
+
+.sun{
+    top: 5%;
+}
+
+.moon{
+    bottom: 5%;
+    rotate: var(--rotation);   
 }
