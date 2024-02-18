@@ -1,0 +1,46 @@
+
+body {
+    --background-color: white;
+    --theme-background: orangered;
+    --button-text-color: red;
+
+    background-color: var(--background-color);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body.dark{
+    --background-color: rgb(53, 57, 66);
+    --theme-background: yellow;
+    --button-text-color: var(--background-color);
+
+    background-color: var(--background-color);
+    
+}
+
+svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--theme-background);
+}
+
+.toggle-button{
+    padding: 0.2rem 0.5rem;
+    color: var(--button-text-color);
+}
+.toggle-button:hover,
+.toggle-button:focus{
+    transform: scale(1.1);
+}
+
+.themes-container{
+    position: absolute;
+    top: 0;
+    border: 1px solid red;
+    height: 200vmin;
+    pointer-events: none;
+}
