@@ -1,33 +1,26 @@
 
-body {
-    --background-color: white;
-    --theme-background: orangered;
-    --button-text-color: red;
+body{
+    --background-color: #2b2a2a;
+    --theme-background: yellow;
+    --button-text-color: #561C24;
     --transition-dalay: 1s;
-    --rotation: 180deg;
-    --sun-opacity: 1;
-    --moon-opacity: 0;
 
-    background-color: var(--background-color);
     height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-body.dark{
-    --background-color: rgb(53, 57, 66);
-    --theme-background: yellow;
-    --button-text-color: var(--background-color);
-    --transition-dalay: 1s;
-    --rotation: 0deg; 
-    --sun-opacity: 0;
-    --moon-opacity: 1;
-
+    padding: 2rem;
+    display: flex;   
+    justify-content: flex-end;
     background-color: var(--background-color);
     
+}
+
+
+body.light {
+    --background-color: white;
+    --theme-background: orangered;
+    --button-text-color: #1F2544 ;
+
+    background-color: var(--background-color);    
 }
 
 svg {
@@ -37,9 +30,16 @@ svg {
 }
 
 .toggle-button{
-    padding: 0.2rem 0.5rem; 
+    height: 50px;
+    padding: 0.2rem 0.6rem; 
+    margin-left: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #E0CCBE;
     color: var(--button-text-color);
-    transition: var(--transition-dalay)
+    
+    transition: var(--transition-delay);
+    
 }
 .toggle-button:hover,
 .toggle-button:focus{
