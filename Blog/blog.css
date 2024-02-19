@@ -4,7 +4,9 @@ body {
     --theme-background: orangered;
     --button-text-color: red;
     --transition-dalay: 1s;
-    --rotaion: 0;
+    --rotation: 180deg;
+    --sun-opacity: 1;
+    --moon-opacity: 0;
 
     background-color: var(--background-color);
     height: 100vh;
@@ -20,7 +22,10 @@ body.dark{
     --theme-background: yellow;
     --button-text-color: var(--background-color);
     --transition-dalay: 1s;
-    --rotation: 180deg;
+    --rotation: 0deg; 
+    --sun-opacity: 0;
+    --moon-opacity: 1;
+
     background-color: var(--background-color);
     
 }
@@ -41,27 +46,3 @@ svg {
     transform: scale(1.1);
 }
 
-.themes-container{
-
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    height: 200vmin;
-    pointer-events: none;
-    transform: rotate(var(--rotation));
-    
-}
-.sun, .moon{
-    position: absolute;
-    /* transition-delay: var(--transition-dalay); */
-}
-
-.sun{
-    top: 5%;
-}
-
-.moon{
-    bottom: 5%;
-    rotate: var(--rotation);   
-}
