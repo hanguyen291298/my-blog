@@ -250,27 +250,57 @@ h3{
     padding: 2rem;
 }
 .form-container{
-    width: 50%;
-    max-width: 600px;
+    width: 45%;
+    max-width: 500px;
     background-color: hsl(0, 20%, 40%, .3);
-    padding: 40px 20px;
-    
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-right: 4rem;
    
 }
 .form-input{
     display: flex;
     flex-direction: column;
+    
     gap: 2rem;
 }
-
-#contact form label{
-    font-size: 1rem;
+.form-input > div{
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5rem;
 }
+.form-input h2{
+    align-self: center;
+    font-size: 2rem;
+}
+.form-input input,
+textarea{
+    background-color:  hsla(0, 2%, 62%, 0.1);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+}
+
 .icon-contact{
     font-size: 2rem;
 }
 
-
+.form-input button{
+    
+    font-size: 1rem;
+    width: min-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: hsla(0, 18%, 72%, 0.1);
+    border: none;
+}
+.form-input button:hover, 
+.form-input button:focus{
+    color: yellow;
+    transform: scale(1.1);
+}
 /* ----------------------------FOOTER-------------------------- */
 .footer{
  width: 100%;
