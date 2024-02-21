@@ -1,24 +1,30 @@
+*::before, *::after{
+    box-sizing: border-box;
+}
 
+/* -----------------------them-container--------------------- */
 body{
     --background-color: #2b2a2a;
     --theme-background: yellow;
     --button-text-color: #561C24;
     --transition-dalay: 1s;
+    --article-text-color: white;
 
     height: 100vh;
     margin: 0;
     padding: 2rem;
     display: flex;   
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--background-color);
     
 }
-
 
 body.light {
     --background-color: white;
     --theme-background: orangered;
     --button-text-color: #1F2544 ;
+    --article-text-color: #333;
 
     background-color: var(--background-color);    
 }
@@ -27,6 +33,10 @@ svg {
     width: 32px;
     height: 32px;
     fill: var(--theme-background);
+}
+
+.theme-container{
+    align-self: flex-end;
 }
 
 .toggle-button{
@@ -41,8 +51,23 @@ svg {
     transition: var(--transition-delay);
     
 }
+
 .toggle-button:hover,
 .toggle-button:focus{
     transform: scale(1.1);
 }
 
+/* --------------------------articles-container----------------------- */
+.articles-container{
+    color: var(--article-text-color);
+    width: 60%;
+    max-width: 600px;
+
+}
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
