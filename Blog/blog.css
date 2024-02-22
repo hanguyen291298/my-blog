@@ -15,7 +15,7 @@ body{
     padding: 2rem;
     display: flex;   
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     background-color: var(--background-color);
     
 }
@@ -37,6 +37,7 @@ svg {
 
 .theme-container{
     align-self: flex-end;
+    height: 20%;
 }
 
 .toggle-button{
@@ -60,14 +61,46 @@ svg {
 /* --------------------------articles-container----------------------- */
 .articles-container{
     color: var(--article-text-color);
-    width: 60%;
-    max-width: 600px;
+    width: 100%;
 
+    
+    display: flex;
+    gap: 2rem;
+    
+    
 }
-h2{
-    font-size: 3rem;
+
+.articles-container > *{
+    border: 1px solid red;
 }
+
 
 p{
     font-size: 1.3rem;
+}
+img{
+    width: 100%;
+}
+
+.newest-article{
+    font-size: 3rem;
+    width: 65%;
+}
+
+.newest-article h2{
+    font-size: 3rem;
+    
+}
+
+.popular-articles{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+} 
+.popular-articles .article img{
+    width: 200px;
+    height: 200px;
 }
