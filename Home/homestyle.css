@@ -307,3 +307,13 @@ textarea{
  padding-bottom: auto;
  text-align: center;
 }
+
+
+/* --------------------media querry------------------------ */
+
+@media screen and (max-width: 1186px){
+    .articles{
+        display: flex;
+        flex-direction: column;
+    }
+}
