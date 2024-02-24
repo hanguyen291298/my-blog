@@ -114,3 +114,16 @@ img{
     width: 200px;
     height: 200px;
 }
+
+/* --------------------------media querry------------------ */
+
+@media screen and (max-width: 800px) {
+    .articles-container{
+       flex-direction: column;
+        
+    }
+    .newest-article, .popular-articles{
+        width: 100%;
+    }
+    
+}
