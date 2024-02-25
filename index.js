@@ -1,6 +1,6 @@
 //CREATE AFFECTION TO MENU DROPDOWN
 const DROPDOWN = document.querySelector(".dropdown")
-const CLOSE_BUTTON = document.querySelector(".close-button")
+const CLOSE_BUTTON = document.querySelector(".close-btn")
 const TOUCH_BUTTON = document.querySelector(".nav-btn")
 const PHONE_TOUCH_BUTTON = document.querySelector(".phone-nav")
 const HEADER_CONTAINER = document.querySelector(".header-container")

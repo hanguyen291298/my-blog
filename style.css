@@ -128,39 +128,38 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0px;   
-    /* right: 160px; */
+    top: 0;   
     visibility:hidden;
-    padding: 10rem 20rem;
+    padding: 10% 20%;
 }
 
 .dropdown-content{
-    padding: 3rem;
+    padding: 5%;
     border-bottom: 2px solid grey;
     border-right: 2px solid grey;
-    border-radius: 2rem;
+    border-radius: 8%;
 }
 
 .dropdown-content li{
     list-style-type: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .dropdown-content li a{
     text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 3em;
+    font-weight: normal;
 }
 .dropdown-content li a:hover{
-    font-size: 3.2rem;
+    font-size: 3.2em;
     color: #FFC9C0;
 }
 
-.close-button{
+.close-btn{
     position: absolute;
-    right: 22rem;
-    top: 12rem;
+    right: 23%;
+    top: 28%;
     cursor: pointer;
 }
 
@@ -174,7 +173,7 @@ html {
         padding: 6rem 12rem;
        
     }
-    .close-button{
+    .close-btn{
         top: 10rem;
         right: 14rem;
     }
@@ -198,7 +197,7 @@ html {
         padding: 5rem 10rem;
        
     }
-    .close-button{
+    .close-btn{
         top: 8rem;
         right: 12rem;
     }
@@ -212,16 +211,16 @@ html {
         padding-left: 5rem;
         
     }
-    .navigation{
+    .nav-bar{
         width: 15vw;
         padding-left: 1rem;
         padding-right: 1rem;
         
     }
-    .touch-button{
+    .nav-btn{
         margin-top: 3rem;
     }
-    .touch-button svg{
+    .nav-btn svg{
         width: 90%;
     }
 }
@@ -235,11 +234,11 @@ html {
     .right{
         padding-left: 3rem;       
     }
-    .navigation{
+    .nav-bar{
         padding-left: 0;
         padding-right: 0;       
     }
-    .touch-button svg{
+    .nav-btn svg{
         width: 60%;
     }
 }
@@ -253,7 +252,7 @@ html {
         margin-top: 2.5rem;
         padding: 5px;
     }
-    .close-button{
+    .close-btn{
         top: 4rem;
         right: 10rem;
     }
@@ -270,16 +269,14 @@ html {
     .right{
         padding-left: 3rem;       
     }
-    .navigation{
+    .nav-bar{
         width: 5vw; 
     }
-    .phone-menu{
+    .phone-nav{
         width: 100%;
-    }
-    .phone-menu{
         visibility: visible;
     }
-    .touch-button{
+    .nav-btn{
         display: none;
     }
 }
@@ -309,10 +306,10 @@ html {
     .dropdown-content li a:hover{
     font-size: 1.2rem;
 }
-.close-button{
+.close-btn{
     display: none
 }
-.phone-menu{
+.phone-nav{
     visibility: hidden;
 }
 .dropdown-content{
