@@ -111,23 +111,20 @@ html {
 .phone-nav{
     width: 20%;
     align-self: flex-end;
-    visibility: hidden;
+    display: none;
 }
 .phone-nav:hover{
     transform: scale(1.3);
     fill: aqua;
 }
 
-
-
 /*--------------------------------------------DROPDOWN----------------------------------------------------*/
 .dropdown {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;   
-    visibility:hidden;
-    padding: 10% 20%;
+    position: relative;
+    width: 60%;
+    height: 80%;
+    display: none;
+    margin: 10% auto;     
 }
 
 .dropdown-content{
@@ -155,8 +152,8 @@ html {
 
 .close-btn{
     position: absolute;
-    right: 25%;
-    top: 25%;
+    left: 85%;
+    top: 10%;
     cursor: pointer;
 }
 
@@ -185,9 +182,6 @@ html {
         width: 120px;
         height: 120px;
     }
-    .close-btn{
-        top: 20%;
-    }
 }
 
 @media only screen and (max-width: 890px) {
@@ -203,9 +197,7 @@ html {
         height: 80px;
     }
 
-    .close-btn{
-        top: 16%;
-    }
+   
 }
 
 @media only screen and (max-width: 690px) {
@@ -229,10 +221,6 @@ html {
         display: none;
     }
 
-    .close-btn{
-        top: 14%;
-        right: 26%;
-    }
 }
 @media only screen and (max-width: 490px) {
     .header-text-container{
@@ -252,10 +240,6 @@ html {
 
     .dropdown-content li a:hover{
     font-size: 1.3em;
-}
-
-.close-btn{
-    top: 8%;
 }
 
 }

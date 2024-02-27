@@ -1,22 +1,22 @@
 //CREATE AFFECTION TO MENU DROPDOWN
 const DROPDOWN = document.querySelector(".dropdown")
 const CLOSE_BUTTON = document.querySelector(".close-btn")
-const TOUCH_BUTTON = document.querySelector(".nav-btn")
-const PHONE_TOUCH_BUTTON = document.querySelector(".phone-nav")
+const NAV_BUTTON = document.querySelector(".nav-btn")
+const PHONE_NAV_BUTTON = document.querySelector(".phone-nav")
 const HEADER_CONTAINER = document.querySelector(".header-container")
 
 CLOSE_BUTTON.addEventListener("click", () => {
-    DROPDOWN.setAttribute("style", "visibility: hidden")
-    HEADER_CONTAINER.setAttribute("style", "visibility: visible")
+    DROPDOWN.style.display = "none"
+    HEADER_CONTAINER.style.display = "flex"
 })
 
-TOUCH_BUTTON.addEventListener("click", () => {
-    DROPDOWN.setAttribute("style", "visibility: visible");
-    HEADER_CONTAINER.setAttribute("style", "visibility: hidden")
+NAV_BUTTON.addEventListener("click", () => {
+    DROPDOWN.style.display = "block"
+    HEADER_CONTAINER.style.display = "none"
 })
-PHONE_TOUCH_BUTTON.addEventListener("click", () => {
-    DROPDOWN.setAttribute("style", "visibility: visible");
-    HEADER_CONTAINER.setAttribute("style", "visibility: hidden")
+PHONE_NAV_BUTTON.addEventListener("click", () => {
+    DROPDOWN.style.display = "block"
+    HEADER_CONTAINER.style.display = "none"
 })
 
 // CREATE EFFECTION TO THE ANIMATION HEADER TEXT
