@@ -1,9 +1,10 @@
 :root{
     --text-color: white;
     --bgrcolor: #1E1E1E;
-    --header-font-size: calc(1em + 5vw);
+    --header-font-size: calc(1em + 4.5vw);
     --nav-content-font-size: calc(1em + 1.5vw);
     --nav-content-font-size-hover: calc(1em + 1.6vw);
+    --svg-button-size: calc(50px + 8vw)
 }
 *{
     margin: 0;
@@ -99,8 +100,8 @@ html {
 }
 
 .nav-btn svg{
-    width: 180px;
-    height: 180px;
+    width: var(--svg-button-size);
+    height: var(--svg-button-size);
     padding: 20%;
     border: 1px ridge var(--text-color);
     border-radius: 50%;
@@ -165,30 +166,16 @@ html {
 
 /* media querry for smaller screen */
 
-@media only screen and (max-width: 1155px) {
-   
-    .nav-btn svg{
-        width: 120px;
-        height: 120px;
-    }
-}
-
 @media only screen and (max-width: 890px) {
+
     .nav-bar{
         width: 15%;
         padding: 0;
-    }
-    .nav-btn svg{
-        width: 80px;
-        height: 80px;
-    }
-
-   
+    } 
 }
 
 @media only screen and (max-width: 690px) {
     .header-text-container{        
-
         width: 70%;
     }
 
