@@ -64,7 +64,7 @@ header ul li a:hover{
     color: aqua;
 }
 /* ----------------------IMAGE-CONTAINER----------------------------- */
-.main{
+.main-container{
     position: relative;
     top: 120px;
     display: flex;
@@ -91,14 +91,14 @@ header ul li a:hover{
     font-weight: bolder;   
 }
 
-.sologan .first{
+.sologan .above{
     padding-left: 1.5em;
     /* padding-right: 1rem; */
     animation: toleft 3s;
     transition: 0.5s;
 }
 
-.sologan .second{
+.sologan .below{
     animation: toright 3s;
     transition: 0.5s;
     padding-right: 1em;
@@ -116,23 +116,23 @@ header ul li a:hover{
     } 
   }
  
-.quotes{
+.quote-container{
     margin: 0 2rem;
 }
-p.quote, p.author{
+.quote, .author{
     font-style: italic;
 }
-p.quote{
+.quote{
     font-size: 2rem;
     padding: 10px 2rem;
 }
-p.author{
+.author{
     text-align: end;
 }
 
 /* ----------------------IMAGE-CONTAINER----------------------------- */
 
-.img-container{
+.imgs-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,12 +142,12 @@ p.author{
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0002)
 
 }
-.img-container .box{
+.imgs-container .box{
     width: 150px;
     height: 150px;
     position: relative;
 }
-.img-container .box img{
+.imgs-container .box img{
     position: absolute;
     top: 0;
     left: 0;
@@ -155,21 +155,21 @@ p.author{
     height: 100%;   
     object-fit: cover;
 }
-.img-container:hover > :not(:hover){
+.imgs-container:hover > :not(:hover){
     margin: 0 -20px;
     filter: drop-shadow(0 0 25px #000) drop-shadow(0 0 45px #000);
     transform: perspective(500px) rotateY(45deg) scale(0.95);
 }
-.img-container .box:hover ~ .box{
+.imgs-container .box:hover ~ .box{
     transform: perspective(500px) rotateY(-45deg) scale(0.95);
 }
-.img-container .box:hover{
+.imgs-container .box:hover{
     transform: perspective(500px) rotateY(0) scale(1.5);
     z-index: 1000;
 }
 
 /*--------------------- newest-blog----------------------- */
-.new-article{
+.article-container{
     padding: 2rem;
    
 }
@@ -217,13 +217,13 @@ h3{
 }
 
 /* ------------------------------------PROJECTS------------------------- */
-.projects, #contact{
+.project-container, #contact{
     /* align-self: flex-start; */
     width: 100%;    
     padding: 2rem;    
 }
 
-.gallery-imgs{
+.gallery{
     width: 65%;
     
     margin: 3rem auto;
@@ -236,7 +236,7 @@ h3{
     width: 100%;
     height: 100%;
 }
-.gallery-imgs a img{
+.gallery a img{
     width: 100%;
     height: 100%;
     object-fit: cover;
