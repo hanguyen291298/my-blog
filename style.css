@@ -163,16 +163,7 @@ html {
 
 /* media querry for smaller screen */
 
-@media only screen and (max-width: 1320px) {
-    /* .header-text-container{
-        font-size: 5em;
-    } */
-}
-
 @media only screen and (max-width: 1155px) {
-    /* .header-text-container{
-        font-size: 4em;
-    } */
    
     .dropdown-content li a{
         font-size: 2em;
@@ -189,9 +180,6 @@ html {
 }
 
 @media only screen and (max-width: 890px) {
-    /* .header-text-container{
-        font-size: 3em;
-    } */
     .nav-bar{
         width: 15%;
         padding: 0;
@@ -206,7 +194,7 @@ html {
 
 @media only screen and (max-width: 690px) {
     .header-text-container{        
-        font-size: 2.5em;
+
         width: 70%;
     }
 
@@ -228,9 +216,8 @@ html {
 @media only screen and (max-width: 490px) {
     .header-text-container{
         width: 85%;
-        font-size: 2em;        
-        margin-left: 5%;
-        margin-top: 25%; 
+        margin-top: 25%;  
+        margin-left: 4%;
     }
 
     .nav-bar{
@@ -244,11 +231,4 @@ html {
     .dropdown-content li a:hover{
     font-size: 1.3em;
 }
-
-}
-
-@media only screen and (max-width: 350px){
-    .header-text-container{
-        font-size: 1.5em;
-    }
 }
