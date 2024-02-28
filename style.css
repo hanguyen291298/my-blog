@@ -1,7 +1,9 @@
 :root{
     --text-color: white;
     --bgrcolor: #1E1E1E;
-    --header-font-size: calc(1em + 5vw)
+    --header-font-size: calc(1em + 5vw);
+    --nav-content-font-size: calc(1em + 1.5vw);
+    --nav-content-font-size-hover: calc(1em + 1.6vw);
 }
 *{
     margin: 0;
@@ -146,11 +148,11 @@ html {
 
 .dropdown-content li a{
     text-decoration: none;
-    font-size: 3em;
+    font-size: var(--nav-content-font-size);
     font-weight: normal;
 }
 .dropdown-content li a:hover{
-    font-size: 3.2em;
+    font-size:var(--nav-content-font-size-hover);
     color: #FFC9C0;
 }
 
@@ -165,14 +167,6 @@ html {
 
 @media only screen and (max-width: 1155px) {
    
-    .dropdown-content li a{
-        font-size: 2em;
-    }
-
-    .dropdown-content li a:hover{
-        font-size: 2.1em;
-    }
-
     .nav-btn svg{
         width: 120px;
         height: 120px;
@@ -198,13 +192,6 @@ html {
         width: 70%;
     }
 
-    .dropdown-content li a{
-        font-size: 1.5em;
-    }
-    .dropdown-content li a:hover{
-        font-size: 1.6em;
-    }
-    
     .phone-nav{
         visibility: visible;
     }
@@ -217,18 +204,12 @@ html {
     .header-text-container{
         width: 85%;
         margin-top: 25%;  
-        margin-left: 4%;
+        margin-left: 2%;
     }
-
+    .right{
+        padding-left: 10%;
+    }
     .nav-bar{
         width: 6%;
     }
-   
-   .dropdown-content li a{
-    font-size: 1.2em;
-}
-
-    .dropdown-content li a:hover{
-    font-size: 1.3em;
-}
 }
