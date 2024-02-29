@@ -11,7 +11,9 @@
     --header-font-size-hover: clamp(0.6em, 1vw + 0.6em, 1.7em);
     --sologan-font-size: calc(2em + 5vw);
     --quote-font-size: calc(0.8em + 1vw);
-    --title-font-size: calc(1em + 2vw)
+    --title-font-size: calc(1em + 2vw);
+    --project-img-size: 25vw;
+    --article-img-size: 15vw;
 }
 body{ 
     background: url(../Images/nightsky.jpg) no-repeat center center fixed; 
@@ -191,20 +193,22 @@ header ul li a:hover{
     display: flex;
     gap: 2rem;
     justify-content: space-around;
+    align-items: center;
     padding: 2rem;
 
 }
 .articles .article-box img{
  
-    width: 30%;
+    width: var(--article-img-size);
     /* min-width: 100px; */
-    height: auto;
+    height: var(--article-img-size);
     
 }
 .articles .article-box p{
   
     width: 60%;
     letter-spacing: 2px;
+    font-size: calc(0.2em + 1vw);
     overflow: hidden;
 }
 .visit-blog{
@@ -237,8 +241,8 @@ header ul li a:hover{
     grid-template-columns: repeat(2, 1fr);
 }
 .img-box{
-    width: 100%;
-    height: 100%;
+    width: var(--project-img-size);
+    height: var(--project-img-size);
 }
 .gallery a img{
     width: 100%;
@@ -320,4 +324,5 @@ textarea{
         display: flex;
         flex-direction: column;
     }
+    
 }
