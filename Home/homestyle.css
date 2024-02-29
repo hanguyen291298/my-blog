@@ -120,14 +120,14 @@ header ul li a:hover{
   /* ------------------------quote container----------------- */
  
 .quote-container{
-    margin: 1% 4%;
+    margin: 1% 5%;
 }
 .quote, .author{
     font-style: italic;
 }
 .quote{
     font-size: var(--quote-font-size);
-    padding: 10px 2rem;
+    padding: 2%;
 }
 .author{
     text-align: end;
