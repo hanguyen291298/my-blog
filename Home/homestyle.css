@@ -286,17 +286,20 @@ textarea{
     border-radius: 5px;
     padding: 2% 3%;
     outline: none;
-    font-size: calc(0.2em + 1.5vw);
+    font-size: calc(0.5em + 0.5vw);
     border: none;
 }
 
 .icon-contact{
     font-size: 2rem;
 }
+label{
+    font-size: calc(0.6em + 0.5vw);
+}
 
 .form-input button{
     
-    font-size: 1rem;
+    font-size: calc(0.6em + 0.5vw);;
     width: min-content;
     padding: 5px 10px;
     border-radius: 5px;
