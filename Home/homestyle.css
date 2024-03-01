@@ -255,12 +255,12 @@ header ul li a:hover{
 .contact-info{
     display: flex;
     justify-content: space-between;
-    padding: 5%;
-    margin: 2%;
+    padding: 4%;
+    /* margin: 10%; */
 }
 .form-container{
-    width: 40%;
-    min-width: 250px;
+    width: 35%;
+    min-width: 220px;
     background-color: hsl(0, 20%, 40%, .3);
     padding: 4%;
     border-radius: 15px;  
@@ -284,9 +284,9 @@ header ul li a:hover{
 textarea{
     background-color:  hsla(0, 2%, 62%, 0.1);
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 2% 3%;
     outline: none;
-    font-size: 1rem;
+    font-size: calc(0.2em + 1.5vw);
     border: none;
 }
 
