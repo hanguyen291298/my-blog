@@ -255,31 +255,30 @@ header ul li a:hover{
 .contact-info{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 5%;
+    margin: 2%;
 }
 .form-container{
-    width: 45%;
-    max-width: 500px;
+    width: 40%;
+    min-width: 250px;
     background-color: hsl(0, 20%, 40%, .3);
-    padding: 20px 30px;
-    border-radius: 15px;
-    margin-right: 4rem;
-   
+    padding: 4%;
+    border-radius: 15px;  
 }
+
 .form-input{
     display: flex;
-    flex-direction: column;
-    
-    gap: 2rem;
+    flex-direction: column;    
+    gap: 2vw;
 }
 .form-input > div{
     display: flex;
     flex-direction: column; 
-    gap: 0.5rem;
+    gap: 1vw;
 }
 .form-input h2{
     align-self: center;
-    font-size: 2rem;
+    font-size: calc(0.8em + 1vw);
 }
 .form-input input,
 textarea{
